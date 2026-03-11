@@ -1,0 +1,126 @@
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --Bg-blue: #D0E4F4;
+}
+/*Generic*/
+body {
+  font-size: 14px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/*Header*/
+/*Navbar*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+nav img{
+  max-width: 50px;
+  aspect-ratio: 16 /9;
+}
+
+/*Main*/
+/*Hero section*/
+.hero-section{
+  display: grid;
+  grid-template-columns: repeat(11,1fr);
+  grid-template-rows: repeat(8,1fr);
+}
+
+.hero-content{
+  grid-column: 1 /6;
+  grid-row: 2 /6;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+h1{
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+
+.hero-content p{
+  line-height: 2;
+  font-size: 1.5rem;
+  font-weight:500 ;
+  padding-right: 130px;
+}
+
+.btn{
+  width: max-content;
+  color: black;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 16px 32px;
+  border: 1px solid black;
+}
+
+.blue-bg{
+  grid-column: 8/ 12;
+  grid-row: 1 /4;
+  background-color: var(--Bg-blue);
+  z-index: 0;
+}
+
+.polka-bg{
+  grid-column: 5 /9;
+  grid-row: 4/7;
+  margin-top: 50px;
+  margin-bottom: -50px;
+  z-index: 1;
+  background-image: url(../assets/images/u_150.png);
+
+}
+
+.hero-img{
+  margin-top: -50px;
+  margin-bottom: 50px;
+  grid-column: 6/ 11;
+  grid-row: 2/ 7;
+  z-index: 2;
+}
+
+.hero-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.blue-bg2{
+  margin-left: -20px;
+  margin-top: -30px;
+  z-index: 0;
+  grid-column: 4 / 12;
+  grid-row: 6 / 8;
+  background-color: var(--Bg-blue);
+}
+
+.sub-sign{
+  font-size: 1.1rem;
+  padding: 30px;
+  grid-column: 1/3;
+  grid-row: 7/8;
+  justify-self: last baseline;
+}
+
+.sub-sign a{
+  color: black;
+}
