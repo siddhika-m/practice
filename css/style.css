@@ -119,7 +119,7 @@ h1 {
 
 .blue-bg2::after {
   content: '';
-  width: calc(100vw - 100%);
+  width: 100vw;
   height: 100%;
   z-index: 0;
   position: absolute;
@@ -164,7 +164,7 @@ h1 {
 
 .blue-bg3::after {
   content: '';
-  width: calc(100vw - 100%);
+  width: 100vw;
   height: 100%;
   z-index: 0;
   position: absolute;
@@ -376,4 +376,30 @@ h1 {
 .feature-content p {
   font-size: 1.4rem;
   line-height: 2;
+}
+
+@media screen and (max-width:1024px) {
+  .blue-bg::after,.blue-bg2::after, .blue-bg3::after, .page3::after,.page4::after{
+    display: none;
+  }
+
+  .feature-icon{
+    width: 130px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .grid-box,.page4 ,.features{
+    display: flex;
+    flex-direction: column;
+  }
+   .feature-icon{
+    width: 170px;
+  }
+
+  .polka-bg3{
+    margin: -40px;
+    margin-bottom: 40px;
+  }
+  
 }
