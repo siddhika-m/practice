@@ -281,6 +281,99 @@ h1 {
   grid-column: 6;
   grid-row: 7/8;
   z-index: 2;
-  margin: -50px -50px -70px -70px ;
-  background: url(../assets/images/u_150.png) ;
+  margin: -50px -50px -70px -70px;
+  background: url(../assets/images/u_150.png);
+}
+
+/*Page 4*/
+.page4 {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-auto-rows: 1fr;
+  position: relative;
+  padding: 0px 20px;
+}
+
+.page4::after {
+  content: '';
+  width: 100vw;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+  background-color: var(--Bg-blue);
+  left: 100%;
+}
+
+.features {
+  grid-column: 1/12;
+  grid-row: 4/12;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 100px;
+  padding: 0px 50px;
+}
+
+.feature-item {
+  display: flex;
+  gap: 20px;
+}
+
+.feature-icon {
+  background-color: var(--Bg-blue);
+  border-radius: 25px;
+  width: 100px;
+  height: 50px;
+  position: relative;
+}
+
+.icon1::after {
+  content: '';
+  background: url(../assets/images/svg-image-4.svg) center/cover;
+  width: 25px;
+  aspect-ratio: 1;
+  position: absolute;
+  margin: 13px;
+}
+
+.icon2::after {
+  content: '';
+  background: url(../assets/images/svg-image-6.svg) center/cover;
+  width: 25px;
+  aspect-ratio: 1;
+  position: absolute;
+  margin: 13px;
+}
+
+.icon3::after {
+  content: '';
+  background: url(../assets/images/svg-image-8.svg) center/cover;
+  width: 25px;
+  aspect-ratio: 1;
+  position: absolute; 
+  margin: 13px;
+}
+
+.icon4::after {
+  content: '';
+  background: url(../assets/images/svg-image-10.svg) center/cover;
+  width: 25px;
+  aspect-ratio: 1;
+  position: absolute;
+  margin: 13px;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-content h2 {
+  font-size: 2rem;
+}
+
+.feature-content p {
+  font-size: 1.4rem;
+  line-height: 2;
 }
