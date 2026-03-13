@@ -563,6 +563,7 @@ input,textarea{
 }
 
 .page7 p{
+  margin-top: 20px;
   grid-row:9 ;
   grid-column: 5/7;
 }
@@ -579,6 +580,7 @@ footer{
   font-size: 1.3rem;
   position: relative;
   z-index: 1;
+  margin-top: 20px;
 }
 
 footer::before,footer::after{
